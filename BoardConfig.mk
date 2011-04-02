@@ -13,7 +13,7 @@ TARGET_ARCH_VARIANT := armv6j
 TARGET_NO_BOOTLOADER := true
 
 # Wifi related defines
-BOARD_WPA_SUPPLICANT_DRIVER := DWEXT
+BOARD_WPA_SUPPLICANT_DRIVER := WEXT
 WIFI_DRIVER_MODULE_PATH     := "/system/wifi/dhd.ko"
 WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/wifi/firmware.bin nvram_path=/system/wifi/nvram.txt"
 WIFI_DRIVER_MODULE_NAME     := "dhd"
@@ -40,17 +40,17 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_LIBS := true
 
-# Using GPSSHIM because our protocol has other version then at hardware/qcom/gps sources available
-BOARD_USES_GPSSHIM := true
-BOARD_GPS_NEEDS_XTRA := true
-BOARD_GPS_LIBRARIES := libloc_api
+# Use open-source GPS
+BOARD_USES_QCOM_LIBS := true
+BOARD_USES_QCOM_LIBRPC := true
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := ascend
+BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 6225
 
 # MISC
 WITH_DEXPREOPT := true
 WITH_JIT := true
 ENABLE_JSC_JIT := true
 JS_ENGINE := v8
-BOARD_USE_NASTY_PTHREAD_CREATE_HACK := true
 
 # dev:    size   erasesize  name
 # mtd0: 00500000 00020000 "boot"
