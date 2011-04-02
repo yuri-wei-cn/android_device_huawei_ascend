@@ -28,8 +28,8 @@ PRODUCT_PACKAGES += \
 
 # vold
 PRODUCT_COPY_FILES += \
-    device/huawei/ascend/vold.fstab:system/etc/vold.fstab \
-    device/huawei/ascend/vold:system/bin/vold
+    device/huawei/ascend/files/etc/vold.fstab:system/etc/vold.fstab \
+    device/huawei/ascend/files/bin/vold:system/bin/vold
 
 # Modules
 PRODUCT_COPY_FILES += \
@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
 
 # DHCP config for wifi
 PRODUCT_COPY_FILES += \
-    device/huawei/ascend/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
+    device/huawei/ascend/files/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
 
 PRODUCT_COPY_FILES += \
     device/huawei/ascend/ueventd.qcom.rc:root/ueventd.qcom.rc
@@ -97,7 +97,7 @@ PRODUCT_COPY_FILES += \
 
 # wpa_supplicant configuration file
 PRODUCT_COPY_FILES += \
-    device/huawei/ascend/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    device/huawei/ascend/files/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 # Proprietary hardware related
 PRODUCT_COPY_FILES += \
