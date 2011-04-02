@@ -20,6 +20,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     librs_jni \
     libOmxCore \
+    libmm-omxcore \
+    libOmxVidEnc \
     gralloc.M860 \
     copybit.M860 \
     gps.M860 \
