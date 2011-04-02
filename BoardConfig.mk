@@ -4,6 +4,7 @@ BOARD_USE_FROYO_LIBCAMERA := true
 # inherit from the proprietary version
 -include vendor/huawei/ascend/BoardConfigVendor.mk
 
+PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=device/huawei/ascend/files/prelink-linux-arm.map
 TARGET_BOARD_PLATFORM := msm7k
 TARGET_CPU_ABI := armeabi-v6j
 TARGET_CPU_ABI2 := armeabi
