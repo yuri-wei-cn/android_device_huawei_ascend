@@ -92,6 +92,6 @@
     <bool name="config_disableMenuKeyInLockScreen">true</bool>
 
     <!-- Use new Gingerbread screen off animation -->
-    <bool name="config_animateScreenLights">true</bool>
+    <bool name="config_animateScreenLights">false</bool>
 
 </resources>
