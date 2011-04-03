@@ -25,8 +25,7 @@ PRODUCT_PACKAGES += \
     gralloc.M860 \
     copybit.M860 \
     gps.M860 \
-    Gallery \
-    dexpreopt
+    Gallery
 
 # vold
 PRODUCT_COPY_FILES += \
