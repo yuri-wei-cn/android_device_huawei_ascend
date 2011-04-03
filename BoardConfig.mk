@@ -51,7 +51,7 @@ BOARD_USE_USB_MASS_STORAGE_SWITCH := true
 BOARD_UMS_LUNFILE := "/sys/devices/platform/usb_mass_storage/lun0/file"
 
 # MISC
-#WITH_DEXPREOPT := true
+WITH_DEXPREOPT := true
 WITH_JIT := true
 ENABLE_JSC_JIT := true
 JS_ENGINE := v8
