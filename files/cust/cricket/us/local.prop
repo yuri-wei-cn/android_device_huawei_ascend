@@ -1,0 +1,54 @@
+ro.config.mcc=310
+ro.config.mnc=16
+ro.cdma.home.operator.numeric=31016
+
+#bt cust info start: 
+#
+#ro.config.bt_onoff=on/off     on:bt is turn on by default; off: bt is shutdown by default
+#ro.config.bt_name=CustName    CustName is the name decided by operator's MCC/MNC,   
+#ro.config.bt_discover=always/ hidden / forseconds   always: bt is discoverable forever; hidden: bt is discoverable never; forseconds: bt is discoverable for 120 seconds
+#
+ro.config.bt_onoff=off
+ro.config.bt_name=M860
+ro.config.bt_discover=hidden
+#
+#bt cust info end: 
+
+#phone language info start: 
+#ro.product.locale.language=en        the default language
+#ro.product.locale.region=US          the default region
+#
+ro.product.locale.language=en      
+ro.product.locale.region=US        
+#
+#phone language info end: 
+
+#LCD brightness start: 
+#ro.config.hw_brightness=102       the default LCD brightness ,if you do not set this item the default value is also 102
+#
+ro.config.hw_brightness=102     
+#
+#LCD brightness end: 
+#
+#BU5D09019 qibaoming 20100429 begin
+#alarmclock download uri begin:
+#ro.config.hw_alarmclock_Uri=http://www.google.com       the default alarmclock download uri 
+#alarmclock download uri end
+#BU5D09019 qibaoming 20100429 end
+
+#DTS2010060100518 chenxiaoqin cKF28238 begin
+#if true don't get neweri from xml
+ro.com.hw_eri_cdmaroaming_off=true
+#DTS2010060100518 chenxiaoqin cKF28238 end
+ro.config.cdma_subscription=1
+ro.config.apn_user_modify=true
+
+#Taken from Cricket build.prop
+ro.config.hw_contact_customer=C153
+ro.config.hw_opt=153
+ro.voicemail.number=*99
+ro.config.hw_uaprof = http://mms.mycricket.com/Huawei-M860.xml
+ro.config.uaprofile3g=http://mms.mycricket.com/Huawei-M860.xml
+ro.config.uaprofile2g=http://mms.mycricket.com/Huawei-M860.xml
+ro.hw_namshort_code=333333
+ro.config.hw_is_nv_operation=true

@@ -1,0 +1,45 @@
+ro.config.mcc=000
+ro.config.mnc=00
+ro.cdma.home.operator.numeric=31016
+
+#bt cust info start: 
+#
+#ro.config.bt_onoff=on/off     on:bt is turn on by default; off: bt is shutdown by default
+#ro.config.bt_name=CustName    CustName is the name decided by operator's MCC/MNC,   
+#ro.config.bt_discover=always/ hidden / forseconds   always: bt is discoverable forever; hidden: bt is discoverable never; forseconds: bt is discoverable for 120 seconds
+#
+ro.config.bt_onoff=off
+ro.config.bt_name=CustName
+ro.config.bt_discover=always
+#
+#bt cust info end: 
+
+#phone language info start: 
+#ro.product.locale.language=en        the default language
+#ro.product.locale.region=US          the default region
+#
+ro.product.locale.language=en      
+ro.product.locale.region=US        
+#
+#phone language info end: 
+
+#LCD brightness start: 
+#ro.config.hw_brightness=102       the default LCD brightness ,if you do not set this item the default value is also 102
+#
+ro.config.hw_brightness=102     
+#
+#LCD brightness end: 
+#
+
+#alarmclock download uri begin:
+#ro.config.hw_alarmclock_Uri=http://www.google.com       the default alarmclock download uri 
+#
+ro.config.hw_alarmclock_Uri=http://www.google.com
+#
+#alarmclock download uri end
+
+#inputmethods custom begin:
+#ro.config.hw_InputMethods=false   if have the inputmethods custom
+#
+ro.config.hw_InputMethods=false       
+#

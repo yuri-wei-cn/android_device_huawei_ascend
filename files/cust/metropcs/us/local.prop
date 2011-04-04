@@ -1,0 +1,64 @@
+ro.config.mcc=310
+#DTS2010080503046  gaoyun 20100805 begin
+ro.config.mnc=16
+ro.cdma.home.operator.numeric=31016
+#DTS2010080503046  gaoyun 20100805 end
+
+#bt cust info start: 
+#
+#ro.config.bt_onoff=on/off     on:bt is turn on by default; off: bt is shutdown by default
+#ro.config.bt_name=CustName    CustName is the name decided by operator's MCC/MNC,   
+#ro.config.bt_discover=always/ hidden / forseconds   always: bt is discoverable forever; hidden: bt is discoverable never; forseconds: bt is discoverable for 120 seconds
+#
+ro.config.bt_onoff=off
+ro.config.bt_name=M860
+ro.config.bt_discover=hidden
+#
+#bt cust info end: 
+
+#phone language info start: 
+#ro.product.locale.language=en        the default language
+#ro.product.locale.region=US          the default region
+#
+ro.product.locale.language=en      
+ro.product.locale.region=US        
+#
+#phone language info end: 
+
+#LCD brightness start: 
+#ro.config.hw_brightness=102       the default LCD brightness ,if you do not set this item the default value is also 102
+#
+ro.config.hw_brightness=102     
+#
+#LCD brightness end: 
+#
+#BU5D09019 qibaoming 20100429 begin
+#alarmclock download uri begin:
+#ro.config.hw_alarmclock_Uri=http://www.google.com       the default alarmclock download uri 
+#alarmclock download uri end
+#BU5D09019 qibaoming 20100429 end
+
+ro.config.cdma_subscription=1
+ro.config.apn_user_modify=true
+
+#DTS2010092500716 zhangcanyan 20100925 begin
+ro.config.mms_rec_localtime=true
+#DTS2010092500716 zhangcanyan 20100925 end
+
+#DTS2010092100329, yangjun, 20100928, begin
+ro.config.hw_cdma_need_fix_mcc=true
+#DTS2010092100329, yangjun, 20100928, end
+
+#Taken from Metro build.prop
+ro.config.hw_only_one_apn=true
+ro.com.google.clientidbase.vs=android-metropcs-us
+ro.com.google.clientidbase.ms=android-metropcs-us
+ro.config.hw_contact_customer=C00
+ro.config.hw_opt=177
+ro.config.hw_uaprof=http://uaprof.metropcs.net/UAProf/Huawei-M860.xml
+ro.config.uaprofile3g=http://uaprof.metropcs.net/UAProf/Huawei-M860.xml
+ro.config.uaprofile2g=http://uaprof.metropcs.net/UAProf/Huawei-M860.xml
+ro.hw_namshort_code=587846
+ro.config.hw_setMDNasVMnum=true
+ro.cdma.otaspnumschema=SELC,1,00,99
+ro.config.hw_noAPNSetting=true
