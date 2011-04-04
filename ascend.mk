@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/ascend/proprietary/libqcamera.so:system/lib/libqcamera.so \
     vendor/huawei/ascend/proprietary/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/huawei/ascend/proprietary/libmmipl.so:system/lib/libmmipl.so \
+    vendor/huawei/ascend/proprietary/libmmprocess.so:system/lib/libmmprocess.so \
     vendor/huawei/ascend/proprietary/init.qcom.bt.sh:system/etc/init.qcom.bt.sh
 
 # Sound and OMX
