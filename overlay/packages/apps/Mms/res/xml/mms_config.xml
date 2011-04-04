@@ -22,8 +22,9 @@
 -->
 
 <mms_config version="4">
+    <bool name="enabledMMS">true</bool>
     <!-- Maximum message size in bytes for a MMS message -->
-    <int name="maxMessageSize">512000</int>
+    <int name="maxMessageSize">1048576</int>
 
     <!-- Maximum height for an attached image -->
     <int name="maxImageHeight">480</int>
@@ -32,6 +33,6 @@
     <int name="maxImageWidth">640</int>
 
     <!-- UAProf URL -->
-    <string name="uaProfUrl">http://wap1.huawei.com/uaprof/Huawei_M860_Normal.xml</string>
+    <string name="uaProfUrl">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
 </mms_config>
