@@ -22,13 +22,14 @@
 -->
 
 <mms_config version="4">
-
+    
     <bool name="enabledMMS">true</bool>
     <bool name="AllowSendNullSms">false</bool>
     <bool name="EnableMMSAlbum">false</bool>
-    <int name="maxMessageSize">512000</int>
+    <int name="maxMessageSize">1024000</int>
     <int name="maxImageHeight">480</int>
     <int name="maxImageWidth">640</int>
+    <bool name="enableMDN">true</bool>
     <int name="defaultSMSMessagesPerThread">200</int>
     <int name="defaultMMSMessagesPerThread">20</int>
     <int name="minMessageCountPerThread">10</int>
@@ -37,7 +38,6 @@
     <int name="recipientLimit">10</int>
     <int name="smsToMmsTextThreshold">2</int>
     <int name="DEFAULT_SLIDE_DURATION">5000</int>
-    <bool name="enableMDN177">true</bool>
-    <string name="userAgent">HUAWEI-M860</string>
+    <string name="userAgent">Android-Mms</string>
 
 </mms_config> 
