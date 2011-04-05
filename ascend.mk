@@ -25,8 +25,7 @@ PRODUCT_PACKAGES += \
     gralloc.M860 \
     copybit.M860 \
     gps.M860 \
-    Gallery \
-    dexpreopt
+    Gallery
 
 # vold
 PRODUCT_COPY_FILES += \
@@ -41,7 +40,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/huawei/ascend/files/initlogo.rle:root/initlogo.rle
 
-# Backing file for USB mounting
+# Dummy backing file for USB mounting
 PRODUCT_COPY_FILES += \
     device/huawei/ascend/files/cdrom/autorun.iso:system/cdrom/autorun.iso
 
@@ -129,12 +128,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-    device/huawei/ascend/files/etc/gps.conf:system/etc/gps.conf \
-    vendor/huawei/ascend/proprietary/libcommondefs.so:system/lib/libcommondefs.so \
-    vendor/huawei/ascend/proprietary/libloc_api.so:obj/lib/libloc_api.so \
-    vendor/huawei/ascend/proprietary/libloc_api.so:system/lib/libloc_api.so \
-    vendor/huawei/ascend/proprietary/libloc_api-rpc.so:obj/lib/libloc_api-rpc.so \
-    vendor/huawei/ascend/proprietary/libloc_api-rpc.so:system/lib/libloc_api-rpc.so
+    device/huawei/ascend/files/etc/gps.conf:system/etc/gps.conf
 
 # Proprietary RIL related
 PRODUCT_COPY_FILES += \
@@ -159,38 +153,21 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/ascend/proprietary/libqmi.so:system/lib/libqmi.so \
     vendor/huawei/ascend/proprietary/libpbmlib.so:system/lib/libpbmlib.so \
     vendor/huawei/ascend/proprietary/libwpa_client.so:system/lib/libwpa_client.so \
-    vendor/huawei/ascend/proprietary/oem_rpc_svc:system/bin/oem_rpc_svc \
-    vendor/huawei/ascend/proprietary/liboem_rapi.so:system/lib/liboem_rapi.so \
-    vendor/huawei/ascend/proprietary/libhwrpc.so:system/lib/libhwrpc.so \
     vendor/huawei/ascend/proprietary/qmuxd:system/bin/qmuxd \
-    vendor/huawei/ascend/proprietary/port-bridge:system/bin/port-bridge \
     vendor/huawei/ascend/proprietary/hci_qcomm_init:system/bin/hci_qcomm_init
+
+# OEM RPC
+PRODUCT_COPY_FILES += \
+    vendor/huawei/ascend/proprietary/modempre:system/bin/modempre \
+    vendor/huawei/ascend/proprietary/oem_rpc_svc:system/bin/oem_rpc_svc \
+    vendor/huawei/ascend/proprietary/libhwrpc.so:system/lib/libhwrpc.so \
+    vendor/huawei/ascend/proprietary/liboem_rapi.so:system/lib/liboem_rapi.so
 
 ## Wifi related
 PRODUCT_COPY_FILES += \
-    device/huawei/ascend/prebuilt/ar6000.ko:system/wifi/ar6000.ko \
-    device/huawei/ascend/prebuilt/artagent:system/wifi/artagent \
-    device/huawei/ascend/prebuilt/athtcmd_ram.bin:system/wifi/athtcmd_ram.bin \
-    device/huawei/ascend/prebuilt/athwlan.bin.z77:system/wifi/athwlan.bin.z77 \
-    device/huawei/ascend/prebuilt/bcm_loadecho.sh:system/wifi/bcm_loadecho.sh \
-    device/huawei/ascend/prebuilt/bcm_loadipf.sh:system/wifi/bcm_loadipf.sh \
-    device/huawei/ascend/prebuilt/caldata.bin.ar6002:system/wifi/caldata.bin.ar6002 \
-    device/huawei/ascend/prebuilt/caldata.bin.ar6102:system/wifi/caldata.bin.ar6102 \
-    device/huawei/ascend/prebuilt/caldata.bin.c8600.ar6002:system/wifi/caldata.bin.c8600.ar6002 \
-    device/huawei/ascend/prebuilt/connectap.sh:system/wifi/connectap.sh \
-    device/huawei/ascend/prebuilt/data.patch.hw2_0.bin.ar6002:system/wifi/data.patch.hw2_0.bin.ar6002 \
-    device/huawei/ascend/prebuilt/data.patch.hw2_0.bin.ar6102:system/wifi/data.patch.hw2_0.bin.ar6102 \
-    device/huawei/ascend/prebuilt/device.bin:system/wifi/device.bin \
     device/huawei/ascend/prebuilt/dhd.ko:system/wifi/dhd.ko \
     device/huawei/ascend/prebuilt/firmware.bin:system/wifi/firmware.bin \
-    device/huawei/ascend/prebuilt/firmware_test.bin:system/wifi/firmware_test.bin \
-    device/huawei/ascend/prebuilt/iwlist:system/wifi/iwlist \
-    device/huawei/ascend/prebuilt/iwconfig:system/wifi/iwconfig \
-    device/huawei/ascend/prebuilt/iwpriv:system/wifi/iwpriv \
-    device/huawei/ascend/prebuilt/loadART.sh:system/wifi/loadART.sh \
-    device/huawei/ascend/prebuilt/loadecho.sh:system/wifi/loadecho.sh \
-    device/huawei/ascend/prebuilt/nvram.txt:system/wifi/nvram.txt \
-    device/huawei/ascend/prebuilt/udp_server:system/wifi/udp_server
+    device/huawei/ascend/prebuilt/nvram.txt:system/wifi/nvram.txt
 
 $(call inherit-product, build/target/product/small_base.mk)
 

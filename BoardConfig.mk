@@ -14,6 +14,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
+WPA_SUPPLICANT_VERSION := VER_0_6_X
 WIFI_DRIVER_MODULE_PATH     := "/system/wifi/dhd.ko"
 WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/wifi/firmware.bin nvram_path=/system/wifi/nvram.txt"
 WIFI_DRIVER_MODULE_NAME     := "dhd"
@@ -32,14 +33,12 @@ BOARD_HAS_LIMITED_EGL := true
 # Audio and OMX
 TARGET_PROVIDES_LIBAUDIO := true
 BOARD_USES_GENERIC_AUDIO := false
-BUILD_WITH_FULL_STAGEFRIGHT:=true
 
 # HW
 TARGET_USES_OLD_LIBSENSORS_HAL := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_LIBS := true
-BOARD_USES_QCOM_LIBRPC := true
 BOARD_VENDOR_USE_AKMD := akm8973
 
 # GPS
@@ -52,7 +51,6 @@ BOARD_USE_USB_MASS_STORAGE_SWITCH := true
 BOARD_UMS_LUNFILE := "/sys/devices/platform/usb_mass_storage/lun0/file"
 
 # MISC
-WITH_DEXPREOPT := true
 WITH_JIT := true
 ENABLE_JSC_JIT := true
 JS_ENGINE := v8
