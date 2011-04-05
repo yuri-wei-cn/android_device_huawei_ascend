@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
     libOmxCore \
     libmm-omxcore \
     libOmxVidEnc \
-    gralloc.M860 \
+    gralloc.msm7k \
     copybit.M860 \
     gps.M860 \
     Gallery
