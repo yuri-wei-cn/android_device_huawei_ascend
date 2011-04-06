@@ -65,9 +65,6 @@ adb pull /system/lib/libhwrpc.so ../../../vendor/huawei/$DEVICE/proprietary/libh
 ## HW
 adb pull /system/lib/hw/sensors.default.so ../../../vendor/huawei/$DEVICE/proprietary/sensors.default.so
 adb pull /system/lib/hw/lights.msm7k.so ../../../vendor/huawei/$DEVICE/proprietary/lights.msm7k.so
-adb pull /system/lib/hw/copybit.msm7k.so ../../../vendor/huawei/$DEVICE/proprietary/copybit.msm7k.so
-adb pull /system/lib/hw/gralloc.msm7k.so ../../../vendor/huawei/$DEVICE/proprietary/gralloc.msm7k.so
-adb pull /system/lib/hw/gralloc.default.so ../../../vendor/huawei/$DEVICE/proprietary/gralloc.default.so
 
 ## GPS
 adb pull /system/lib/libcommondefs.so ../../../vendor/huawei/$DEVICE/proprietary/libcommondefs.so
@@ -80,4 +77,5 @@ adb pull /system/lib/libcamera.so ../../../vendor/huawei/$DEVICE/proprietary/lib
 adb pull /system/lib/libqcamera.so ../../../vendor/huawei/$DEVICE/proprietary/libqcamera.so
 adb pull /system/lib/libmmjpeg.so ../../../vendor/huawei/$DEVICE/proprietary/libmmjpeg.so
 adb pull /system/lib/libmmipl.so ../../../vendor/huawei/$DEVICE/proprietary/libmmipl.so
+adb pull /system/lib/libmmprocess.so ../../../vendor/huawei/$DEVICE/proprietary/libmmprocess.so
 adb pull /system/etc/init.qcom.bt.sh ../../../vendor/huawei/$DEVICE/proprietary/init.qcom.bt.sh
