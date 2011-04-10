@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_PACKAGES += \
-    librs_jni \
     libOmxCore \
     libmm-omxcore \
     libOmxVidEnc \
@@ -27,12 +26,24 @@ PRODUCT_PACKAGES += \
     gps.M860 \
     Gallery
 
+# Live Wallpapers
+PRODUCT_PACKAGES += \
+    librs_jni \
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    MagicSmokeWallpapers \
+    VisualizationWallpapers
+
+# Live Wallpapers support
+PRODUCT_COPY_FILES += \
+    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
+
 # vold
 PRODUCT_COPY_FILES += \
     device/huawei/ascend/files/etc/vold.fstab:system/etc/vold.fstab \
     device/huawei/ascend/files/bin/vold:system/bin/vold
 
-# Modules
+# Compcache module
 PRODUCT_COPY_FILES += \
     device/huawei/ascend/modules/zram.ko:system/lib/modules/2.6.29-perf/zram.ko
 
@@ -168,9 +179,9 @@ PRODUCT_COPY_FILES += \
 
 ## Wifi related
 PRODUCT_COPY_FILES += \
-    device/huawei/ascend/prebuilt/dhd.ko:system/wifi/dhd.ko \
-    device/huawei/ascend/prebuilt/firmware.bin:system/wifi/firmware.bin \
-    device/huawei/ascend/prebuilt/nvram.txt:system/wifi/nvram.txt
+    device/huawei/ascend/modules/bcm4319.ko:system/lib/modules/bcm4319.ko \
+    device/huawei/ascend/files/etc/firmware.bin:system/etc/firmware/fw_bcm4319.bin \
+    device/huawei/ascend/files/etc/firmware/nvram.txt:system/etc/firmware/nvram.txt
 
 $(call inherit-product, build/target/product/small_base.mk)
 

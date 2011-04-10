@@ -14,10 +14,10 @@ TARGET_NO_BOOTLOADER := true
 
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
-WPA_SUPPLICANT_VERSION := VER_0_6_X
-WIFI_DRIVER_MODULE_PATH     := "/system/wifi/dhd.ko"
-WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/wifi/firmware.bin nvram_path=/system/wifi/nvram.txt"
+WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/bcm4319.ko"
+WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/firmware/fw_bcm4319.bin nvram_path=/system/etc/firmware/nvram.txt"
 WIFI_DRIVER_MODULE_NAME     := "dhd"
+WPA_SUPPLICANT_VERSION := VER_0_6_X
 
 BOARD_KERNEL_CMDLINE := mem=211M console=ttyMSM2,115200n8 androidboot.hardware=qcom console=ttyUSBCONSOLE0 androidboot.console=ttyUSBCONSOLE0
 BOARD_KERNEL_BASE := 0x00200000
