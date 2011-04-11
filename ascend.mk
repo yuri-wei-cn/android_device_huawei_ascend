@@ -180,7 +180,7 @@ PRODUCT_COPY_FILES += \
 ## Wifi related
 PRODUCT_COPY_FILES += \
     device/huawei/ascend/modules/bcm4319.ko:system/lib/modules/bcm4319.ko \
-    device/huawei/ascend/files/etc/firmware.bin:system/etc/firmware/fw_bcm4319.bin \
+    device/huawei/ascend/files/etc/firmware/fw_bcm4319.bin:system/etc/firmware/fw_bcm4319.bin \
     device/huawei/ascend/files/etc/firmware/nvram.txt:system/etc/firmware/nvram.txt
 
 $(call inherit-product, build/target/product/small_base.mk)
