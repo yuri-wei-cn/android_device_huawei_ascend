@@ -94,7 +94,7 @@ on boot
     chmod 0777 /sys/kernel/logger/log_radio/priority
     
     # Enable low memory killer to check file pages
-    # write /sys/module/lowmemorykiller/parameters/minfile 0,0,0,4632,5632,6144
+    write /sys/module/lowmemorykiller/parameters/minfile 0,0,0,4632,5632,6144
     write /sys/module/lowmemorykiller/parameters/check_filepages 1
 
     # lowmem killer minfree adjustments
