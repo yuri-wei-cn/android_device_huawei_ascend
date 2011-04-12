@@ -94,11 +94,11 @@ on boot
     chmod 0777 /sys/kernel/logger/log_radio/priority
     
     # Enable low memory killer to check file pages
-    write /sys/module/lowmemorykiller/parameters/minfile 0,0,0,4632,5632,6144
+    # write /sys/module/lowmemorykiller/parameters/minfile 0,0,0,4632,5632,6144
     write /sys/module/lowmemorykiller/parameters/check_filepages 1
 
     # lowmem killer minfree adjustments
-    write /sys/module/lowmemorykiller/parameters/minfree 1536,2048,4096,9216,10240,10240
+    write /sys/module/lowmemorykiller/parameters/minfree 1536,3072,4096,21000,23000,25000
 
 on property:init.svc.hcid=running
     write /sys/devices/virtual/bluetooth/hci0/idle_timeout 7000
@@ -127,8 +127,8 @@ service hcid /system/bin/hcid -s -n -f /etc/bluez/hcid.conf
 
 # logcat switch at boot
 service log_logcat /system/bin/logcat
-        disabled
-oneshot
+    disabled
+    oneshot
 
 on property:persist.service.logcat.enable=1
     start log_logcat
@@ -146,11 +146,6 @@ service wpa_supplicant /system/bin/wpa_supplicant -Dwext -ieth0 -W -c /data/misc
     group system wifi inet dhcp
     disabled
     oneshot 
-
-# Broadcom supplicant
-service bcm_supplicant /system/bin/bcm_supplicant -Dwext -ieth0 -W -c /data/misc/wifi/wpa_supplicant.conf
-    disabled
-    oneshot
 
 service dhcpcd /system/bin/dhcpcd -ABKL eth0
     disabled
