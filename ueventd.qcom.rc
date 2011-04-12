@@ -4,5 +4,11 @@
 /sys/kernel/logger/log_events/*  0777   system       system
 /sys/kernel/logger/log_radio/*   0777   system       system
 /dev/input/event*                0777   system       system
+/dev/rfkill                      0660   bluetooth    bluetooth
 
+/dev/accel                       0660   system       system
+/dev/accel                       0660   system       system
+/dev/akm8973_aot                 0660   system       system
+/dev/akm8973_dev                 0660   system       system
+/dev/light                       0660   system       system
 
