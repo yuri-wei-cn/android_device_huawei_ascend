@@ -24,12 +24,14 @@ PRODUCT_PACKAGES += \
     gralloc.msm7k \
     copybit.M860 \
     gps.M860 \
+    libRS \
+    hwprops \
+    rzscontrol \
     Gallery
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
     librs_jni \
-    LiveWallpapers \
     LiveWallpapersPicker
 
 # Live Wallpapers support
@@ -43,7 +45,7 @@ PRODUCT_COPY_FILES += \
 
 # Compcache module
 PRODUCT_COPY_FILES += \
-    device/huawei/ascend/modules/zram.ko:system/lib/modules/2.6.29-perf/zram.ko
+    device/huawei/ascend/modules/ramzswap.ko:system/lib/modules/2.6.29-perf/kernel/drivers/staging/ramzswap/ramzswap.ko
 
 # Board-specific init
 PRODUCT_COPY_FILES += \
@@ -98,7 +100,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # disable Compcache by default. Causes stability problems.
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.compcache.default=0 
+    ro.compcache.default=18
 
 # Don't put dexfiles in /cache on ascend
 PRODUCT_PROPERTY_OVERRIDES += \
