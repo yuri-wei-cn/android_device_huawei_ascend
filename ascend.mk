@@ -94,9 +94,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=65536
 
-# Disable dithering by default
+# Enable dithering by default
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.use_dithering=0
+    persist.sys.use_dithering=1
 
 # disable Compcache by default. Causes stability problems.
 PRODUCT_PROPERTY_OVERRIDES += \

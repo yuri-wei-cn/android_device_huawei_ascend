@@ -41,7 +41,7 @@
 /******************************************************************************/
 
 #if defined(COPYBIT_M860)
-#define MAX_SCALE_FACTOR    (4)
+#define MAX_SCALE_FACTOR    (3)
 #define MAX_DIMENSION       (4096)
 #elif defined(COPYBIT_MSM7K)
 #define MAX_SCALE_FACTOR    (4)
@@ -127,8 +127,10 @@ static int get_format(int format) {
     case COPYBIT_FORMAT_RGB_888:       return MDP_RGB_888;
     case COPYBIT_FORMAT_RGBA_8888:     return MDP_RGBA_8888;
     case COPYBIT_FORMAT_BGRA_8888:     return MDP_BGRA_8888;
-    case COPYBIT_FORMAT_YCrCb_420_SP:  return MDP_Y_CBCR_H2V2;
-    case COPYBIT_FORMAT_YCbCr_422_SP:  return MDP_Y_CRCB_H2V1;
+// case COPYBIT_FORMAT_YCrCb_422_SP: return MDP_Y_CBCR_H2V1;
+    case COPYBIT_FORMAT_YCrCb_420_SP: return MDP_Y_CBCR_H2V2;
+    case COPYBIT_FORMAT_YCbCr_422_SP: return MDP_Y_CRCB_H2V1;
+// case COPYBIT_FORMAT_YCbCr_420_SP: return MDP_Y_CRCB_H2V2;
     }
     return -1;
 }
@@ -210,7 +212,7 @@ static void set_rects(struct copybit_context_t *dev,
 static void set_infos(struct copybit_context_t *dev, struct mdp_blit_req *req) {
     req->alpha = dev->mAlpha;
     req->transp_mask = MDP_TRANSP_NOP;
-    req->flags = dev->mFlags | MDP_BLEND_FG_PREMULT;
+    req->flags = dev->mFlags; //| MDP_BLEND_FG_PREMULT;
 }
 
 /** copy the bits */
