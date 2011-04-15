@@ -81,7 +81,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES := \
     wifi.interface=eth0 \
-    wifi.supplicant_scan_interval=60 \
+    wifi.supplicant_scan_interval=30 \
     ro.sf.lcd_density=160 \
     ro.com.android.dataroaming=false
 
