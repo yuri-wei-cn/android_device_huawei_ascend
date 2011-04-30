@@ -41,7 +41,6 @@ PRODUCT_COPY_FILES += \
 # vold
 PRODUCT_COPY_FILES += \
     device/huawei/ascend/files/etc/vold.fstab:system/etc/vold.fstab \
-    device/huawei/ascend/files/bin/vold:system/bin/vold
 
 # Compcache module
 PRODUCT_COPY_FILES += \
