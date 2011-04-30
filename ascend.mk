@@ -40,7 +40,7 @@ PRODUCT_COPY_FILES += \
 
 # vold
 PRODUCT_COPY_FILES += \
-    device/huawei/ascend/files/etc/vold.fstab:system/etc/vold.fstab \
+    device/huawei/ascend/files/etc/vold.fstab:system/etc/vold.fstab
 
 # Compcache module
 PRODUCT_COPY_FILES += \
@@ -95,7 +95,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Enable dithering by default
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.use_dithering=1
+    persist.sys.use_dithering=0
 
 # disable Compcache by default. Causes stability problems.
 PRODUCT_PROPERTY_OVERRIDES += \
