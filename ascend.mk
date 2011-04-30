@@ -137,7 +137,6 @@ PRODUCT_COPY_FILES += \
 
 # HW
 PRODUCT_COPY_FILES += \
-    vendor/huawei/ascend/proprietary/sensors.default.so:system/lib/hw/sensors.default.so \
     vendor/huawei/ascend/proprietary/lights.msm7k.so:system/lib/hw/lights.msm7k.so
 
 # GPS
