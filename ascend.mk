@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
     libOmxVidEnc \
     gralloc.msm7k \
     copybit.M860 \
+    sensors.M860 \
     gps.M860 \
     libRS \
     hwprops \
