@@ -40,7 +40,8 @@ PRODUCT_COPY_FILES += \
 
 # vold
 PRODUCT_COPY_FILES += \
-    device/huawei/ascend/files/etc/vold.fstab:system/etc/vold.fstab
+    device/huawei/ascend/files/etc/vold.fstab:system/etc/vold.fstab \
+    device/huawei/ascend/files/bin/vold:system/bin/vold
 
 # Compcache module
 PRODUCT_COPY_FILES += \
@@ -97,7 +98,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.use_dithering=0
 
-# disable Compcache by default. Causes stability problems.
+# Enable Compcache by default.
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.compcache.default=18
 
@@ -137,7 +138,7 @@ PRODUCT_COPY_FILES += \
 
 # HW
 PRODUCT_COPY_FILES += \
-    vendor/huawei/ascend/proprietary/lights.msm7k.so:system/lib/hw/lights.msm7k.so
+    vendor/huawei/ascend/proprietary/lights.msm7k.so:system/lib/hw/lights.msm7k.so \
     vendor/huawei/ascend/proprietary/sensors.default.so:system/lib/hw/sensors.default.so
 
 # GPS

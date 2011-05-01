@@ -49,8 +49,8 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := M860
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 6225
 
 # USB
-BOARD_USE_USB_MASS_STORAGE_SWITCH := true
-BOARD_UMS_LUNFILE := "/sys/devices/platform/usb_mass_storage/lun0/file"
+#BOARD_USE_USB_MASS_STORAGE_SWITCH := true
+#BOARD_UMS_LUNFILE := "/sys/devices/platform/usb_mass_storage/lun0/file"
 
 # MISC
 WITH_JIT := true
