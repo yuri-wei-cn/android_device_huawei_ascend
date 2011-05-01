@@ -36,6 +36,7 @@ adb pull /system/lib/libmm-adspsvc.so ../../../vendor/huawei/$DEVICE/proprietary
 adb pull /system/lib/libOmxH264Dec.so ../../../vendor/huawei/$DEVICE/proprietary/libOmxH264Dec.so
 adb pull /system/lib/libOmxMpeg4Dec.so ../../../vendor/huawei/$DEVICE/proprietary/libOmxMpeg4Dec.so
 adb pull /system/lib/libOmxVidEnc.so ../../../vendor/huawei/$DEVICE/proprietary/libOmxVidEnc.so
+adb pull /system/lib/libOmxCore.so ../../../vendor/huawei/$DEVICE/proprietary/libOmxCore.so
 
 ## RIL
 adb pull /system/lib/libril-qc-1.so ../../../vendor/huawei/$DEVICE/proprietary/libril-qc-1.so
