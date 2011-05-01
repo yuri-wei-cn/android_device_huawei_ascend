@@ -96,7 +96,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Enable dithering by default
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.use_dithering=0
+    persist.sys.use_dithering=1
 
 # Enable Compcache by default.
 PRODUCT_PROPERTY_OVERRIDES += \
