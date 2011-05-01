@@ -12,5 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include $(call all-named-subdir-makefiles, libaudio libcopybit libsensors)
+include $(call all-named-subdir-makefiles, libaudio libcopybit)
  
