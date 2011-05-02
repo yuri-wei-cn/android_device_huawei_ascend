@@ -56,7 +56,7 @@ adb pull /system/lib/libril-qcril-hook-oem.so ../../../vendor/huawei/$DEVICE/pro
 adb pull /system/lib/libril.so ../../../vendor/huawei/$DEVICE/proprietary/libril.so
 adb pull /system/lib/libdss.so ../../../vendor/huawei/$DEVICE/proprietary/libdss.so
 adb pull /system/lib/libdll.so ../../../vendor/huawei/$DEVICE/proprietary/libdll.so
-adb pull /system/lib/libpppoe_ctrl.so ../../../vendor/huawei/$DEVICE/proprietary/libpppoe_ctrl.so
+#adb pull /system/lib/libpppoe_ctrl.so ../../../vendor/huawei/$DEVICE/proprietary/libpppoe_ctrl.so
 adb pull /system/lib/libqmi.so ../../../vendor/huawei/$DEVICE/proprietary/libqmi.so
 adb pull /system/lib/libpbmlib.so ../../../vendor/huawei/$DEVICE/proprietary/libpbmlib.so
 adb pull /system/lib/libwpa_client.so ../../../vendor/huawei/$DEVICE/proprietary/libwpa_client.so
@@ -68,9 +68,9 @@ adb pull /system/lib/hw/sensors.default.so ../../../vendor/huawei/$DEVICE/propri
 adb pull /system/lib/hw/lights.msm7k.so ../../../vendor/huawei/$DEVICE/proprietary/lights.msm7k.so
 
 ## GPS
-adb pull /system/lib/libcommondefs.so ../../../vendor/huawei/$DEVICE/proprietary/libcommondefs.so
-adb pull /system/lib/libloc_api.so ../../../vendor/huawei/$DEVICE/proprietary/libloc_api.so
-adb pull /system/lib/libloc_api-rpc.so ../../../vendor/huawei/$DEVICE/proprietary/libloc_api-rpc.so
+#adb pull /system/lib/libcommondefs.so ../../../vendor/huawei/$DEVICE/proprietary/libcommondefs.so
+#adb pull /system/lib/libloc_api.so ../../../vendor/huawei/$DEVICE/proprietary/libloc_api.so
+#adb pull /system/lib/libloc_api-rpc.so ../../../vendor/huawei/$DEVICE/proprietary/libloc_api-rpc.so
 
 ## Hardware
 adb pull /system/lib/libaudioeq.so ../../../vendor/huawei/$DEVICE/proprietary/libaudioeq.so
