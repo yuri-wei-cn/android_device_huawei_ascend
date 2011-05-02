@@ -23,7 +23,7 @@ Now, we create our build directories and pull the right source:
 Extract necessary binaries and proprietary files
 ------------------------------------------------
 
-We will need to reuse some proprietary files. The best ROM to obtain these from is a CM7-Ascend build 05012011 or later (or the Tapout ROM):
+We will need to reuse some proprietary files. The best ROM to obtain these from is a build of CM7-Ascend (05012011 or later). The Tapout ROM can also be used:
 
     $ cd
     
