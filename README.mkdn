@@ -23,8 +23,7 @@ Now, we create our build directories and pull the right source:
 Extract necessary binaries and proprietary files
 ------------------------------------------------
 
-We will re-use some proprietary files from the original Eclair ROM. 
-The files can be extracted from any Ascend running an Eclair ROM (including Icarus 1.X):
+We will need to reuse some proprietary files. The best ROM to obtain these from is a CM7-Ascend build 05012011 or later (or the Tapout ROM):
 
     $ cd
     
@@ -38,7 +37,7 @@ Once thats done you can start compiling.
 
 Follow the aosp instructions on setting up the build environment. - http://source.android.com/source/download.html
 
-When the environment is setup, we need to grab a copy of Koush's ROM Manager. This is necessary to build CM6.
+When the environment is setup, we need to grab a copy of Koush's ROM Manager. This is necessary to build CM7.
 
     $ cd
     
