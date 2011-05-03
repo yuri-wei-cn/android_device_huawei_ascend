@@ -104,8 +104,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dexopt-data-only=1
 
 # media configuration xml file
-PRODUCT_COPY_FILES += \
-    device/huawei/ascend/files/etc/media_profiles.xml:system/etc/media_profiles.xml
+#PRODUCT_COPY_FILES += \
+#    device/huawei/ascend/files/etc/media_profiles.xml:system/etc/media_profiles.xml
 
 # wpa_supplicant configuration file
 PRODUCT_COPY_FILES += \
