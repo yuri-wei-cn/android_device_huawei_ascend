@@ -151,19 +151,11 @@ service wpa_supplicant /system/bin/wpa_supplicant -Dwext -ieth0 -W -c /data/misc
     disabled
     oneshot 
 
-service dhcpcd_eth0 /system/bin/dhcpcd -B
+service dhcpcd_eth0 /system/bin/dhcpcd -ABKL eth0
     disabled
     oneshot
     
 # Compass / Accelerometer daemon
 service akmd /system/bin/akmd2
-    disabled
-    oneshot
-
-service wlan_tool /system/bin/wlan_tool
-    disabled
-    oneshot
-
-service abtfilt /system/bin/abtfilt -c -d -z -n
     disabled
     oneshot
