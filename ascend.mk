@@ -19,8 +19,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libOmxCore \
-    libmm-omxcore \
-    libOmxVidEnc \
     gralloc.msm7k \
     copybit.M860 \
     gps.M860 \
