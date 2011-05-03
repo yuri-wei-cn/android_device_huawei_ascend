@@ -101,6 +101,9 @@ on boot
     # lowmem killer minfree adjustments
     write /sys/module/lowmemorykiller/parameters/minfree 1536,3072,4096,21000,23000,25000
 
+    # fb0 should not be world writable
+    chmod 0667 /dev/graphics/fb0
+
 on property:init.svc.hcid=running
     write /sys/devices/virtual/bluetooth/hci0/idle_timeout 7000
 
