@@ -1,3 +1,19 @@
+#
+# Copyright (C) 2009 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
 
 # The gps config appropriate for this device
@@ -18,13 +34,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_PACKAGES += \
-    libOmxCore \
     gralloc.msm7k \
     copybit.M860 \
     gps.M860 \
     libRS \
     hwprops \
     rzscontrol \
+    libOmxCore \
+    libmm-omxcore \
+    libOmxVidEnc \
     Gallery
 
 # Live Wallpapers
@@ -72,7 +90,7 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.location.xml:system/etc/permissions/android.hardware.location.xml \
     frameworks/base/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/base/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
-    frameworks/base/data/etc/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
+    frameworks/base/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
     frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/base/data/etc/android.hardware.touchscreen.xml:system/etc/permissions/android.hardware.touchscreen.xml
 
@@ -91,12 +109,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=65537
 
-# Enable dithering by default
+# Perfomance tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.use_dithering=1
-
-# Enable Compcache by default.
-PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.execution-mode=int:jit \
+    dalvik.vm.heapsize=24m \
+    persist.sys.use_dithering=1 \
     ro.compcache.default=18
 
 # Don't put dexfiles in /cache on ascend
@@ -104,8 +121,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dexopt-data-only=1
 
 # media configuration xml file
-#PRODUCT_COPY_FILES += \
-#    device/huawei/ascend/files/etc/media_profiles.xml:system/etc/media_profiles.xml
+PRODUCT_COPY_FILES += \
+    device/huawei/ascend/files/etc/media_profiles.xml:system/etc/media_profiles.xml
 
 # wpa_supplicant configuration file
 PRODUCT_COPY_FILES += \
