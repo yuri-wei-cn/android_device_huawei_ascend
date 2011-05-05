@@ -64,6 +64,7 @@ adb pull /system/lib/liboem_rapi.so ../../../vendor/huawei/$DEVICE/proprietary/l
 adb pull /system/lib/libhwrpc.so ../../../vendor/huawei/$DEVICE/proprietary/libhwrpc.so
 
 ## HW
+adb pull /system/lib/hw/gralloc.msm7k.so ../../../vendor/huawei/$DEVICE/proprietary/gralloc.msm7k.so
 adb pull /system/lib/hw/sensors.default.so ../../../vendor/huawei/$DEVICE/proprietary/sensors.default.so
 adb pull /system/lib/hw/lights.msm7k.so ../../../vendor/huawei/$DEVICE/proprietary/lights.msm7k.so
 

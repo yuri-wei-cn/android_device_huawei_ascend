@@ -34,7 +34,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_PACKAGES += \
-    gralloc.msm7k \
     copybit.M860 \
     gps.M860 \
     libRS \
@@ -151,6 +150,7 @@ PRODUCT_COPY_FILES += \
 
 # HW
 PRODUCT_COPY_FILES += \
+    vendor/huawei/ascend/proprietary/gralloc.msm7k.so:system/lib/hw/gralloc.msm7k.so \
     vendor/huawei/ascend/proprietary/lights.msm7k.so:system/lib/hw/lights.msm7k.so \
     vendor/huawei/ascend/proprietary/sensors.default.so:system/lib/hw/sensors.default.so
 
