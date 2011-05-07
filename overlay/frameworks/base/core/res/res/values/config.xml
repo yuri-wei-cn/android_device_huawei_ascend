@@ -33,14 +33,14 @@
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">true</bool>
 
-    <!-- The duration (in milliseconds) of a short animation.
+    <!-- The duration (in milliseconds) of a short animation. -->
     <integer name="config_shortAnimTime">100</integer>
 
-    The duration (in milliseconds) of a medium-length animation.
+    <!-- The duration (in milliseconds) of a medium-length animation. -->
     <integer name="config_mediumAnimTime">250</integer>
 
-    The duration (in milliseconds) of a long animation.
-      <integer name="config_longAnimTime">350</integer> -->
+    <!-- The duration (in milliseconds) of a long animation. -->
+    <integer name="config_longAnimTime">350</integer>
 
     <!-- Component name of the service providing network location support. -->
     <string name="config_networkLocationProvider">com.google.android.location.NetworkLocationProvider</string>
@@ -156,7 +156,7 @@
     <!-- The default iface on which to monitor data use -->
     <string name="config_datause_iface">rmnet0</string>
 
-    <!-- Use new Gingerbread screen off animation -->
-    <bool name="config_animateScreenLights">false</bool>
+    <!-- If this is true, the screen will fade off. -->
+    <bool name="config_animateScreenLights">true</bool>
 
 </resources>
