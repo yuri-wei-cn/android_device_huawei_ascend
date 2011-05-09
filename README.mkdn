@@ -16,7 +16,7 @@ Now, we create our build directories and pull the right source:
 
     $ cd ~/android/system/
     
-    $ repo init -u git://github.com/isaacj87/android.git -b gingerbread
+    $ repo init -u git://github.com/yuri-wei-cn/android.git -b gingerbread
     
     $ repo sync -j16
 
