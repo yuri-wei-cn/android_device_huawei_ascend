@@ -23,22 +23,14 @@
 
 <mms_config version="4">
     <!-- Flag indicating whether MMS should be enabled -->
+    <bool name="enterNumShow">false</bool>
+        
+    <bool name="isJudge">false</bool>
+    
     <bool name="enabledMMS">true</bool>
 
-    <!-- From Stock Mms.apk -->
-    <bool name="AllowSendNullSms">false</bool>
-    <bool name="EnableMMSAlbum">false</bool>
 
-    <!-- From Cricket mms_config from isaac -->
-    <bool name="enableMDN">true</bool>
-
-    <!-- From Mms.apk from token419 on xda-developers -->
-    <bool name="enabledTransID">true</bool>
-    <bool name="enabledNotifyWapMMSC">true</bool>
-    <int name="maxMessageSize">1258291</int>
-    <string name="httpParams">x-up-calling-line-id: 1##LINE1##|X-Cricket-MDN: 1##LINE1##</string>
-    <string name="httpParamsLine1Key">##LINE1##</string>
-    <bool name="allowAttachAudio">true</bool>
+    <int name="maxMessageSize">300000</int>
 
     <!-- Maximum height for an attached image -->
     <int name="maxImageHeight">480</int>

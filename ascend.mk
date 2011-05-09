@@ -15,7 +15,7 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
-
+PRODUCT_LOCALES += zh_CN zh_HK zh_TW
 # The gps config appropriate for this device
 #$(call inherit-product, device/common/gps/gps_us_supl.mk)
 
@@ -190,7 +190,27 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/ascend/proprietary/oem_rpc_svc:system/bin/oem_rpc_svc \
     vendor/huawei/ascend/proprietary/libhwrpc.so:system/lib/libhwrpc.so \
     vendor/huawei/ascend/proprietary/liboem_rapi.so:system/lib/liboem_rapi.so
-
+    
+## C8600 WIFI    
+PRODUCT_COPY_FILES += \
+    vendor/huawei/ascend/proprietary/wifi/ar6000.ko:system/wifi/ar6000.ko \
+    vendor/huawei/ascend/proprietary/wifi/caldata.bin.c8600.ar6002:system/wifi/caldata.bin.c8600.ar6002 \
+    vendor/huawei/ascend/proprietary/wifi/iwlist:system/wifi/iwlist \
+    vendor/huawei/ascend/proprietary/wifi/artagent:system/wifi/artagent \
+    vendor/huawei/ascend/proprietary/wifi/connectap.sh:system/wifi/connectap.sh \
+    vendor/huawei/ascend/proprietary/wifi/loadART.sh:system/wifi/loadART.sh \
+    vendor/huawei/ascend/proprietary/wifi/athtcmd_ram.bin:system/wifi/athtcmd_ram.bin \
+    vendor/huawei/ascend/proprietary/wifi/data.patch.hw2_0.bin.ar6002:system/wifi/data.patch.hw2_0.bin.ar6002 \
+    vendor/huawei/ascend/proprietary/wifi/loadecho.sh:system/wifi/loadecho.sh \
+    vendor/huawei/ascend/proprietary/wifi/athwlan.bin.z77:system/wifi/athwlan.bin.z77 \
+    vendor/huawei/ascend/proprietary/wifi/data.patch.hw2_0.bin.ar6102:system/wifi/data.patch.hw2_0.bin.ar6102 \
+    vendor/huawei/ascend/proprietary/wifi/udp_server:system/wifi/udp_server \
+    vendor/huawei/ascend/proprietary/wifi/caldata.bin.ar6002:system/wifi/caldata.bin.ar6002 \
+    vendor/huawei/ascend/proprietary/wifi/device.bin:system/wifi/device.bin \
+    vendor/huawei/ascend/proprietary/wifi/caldata.bin.ar6102:system/wifi/caldata.bin.ar6102 \
+    vendor/huawei/ascend/proprietary/wifi/iwconfig:system/wifi/iwconfig \
+    vendor/huawei/ascend/proprietary/wpa_supplicant:system/bin/wpa_supplicant
+    
 ## Wifi related
 PRODUCT_COPY_FILES += \
     device/huawei/ascend/modules/bcm4319.ko:system/lib/modules/bcm4319.ko \
@@ -207,7 +227,8 @@ PRODUCT_MODEL := Huawei Ascend
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-huawei-us \
     ro.com.google.locationfeatures=1 \
-    ro.cdma.home.operator.numeric=31016 \
+    ro.cdma.home.operator.numeric=46003 \
+    ro.cdma.home.operator.alpha=中国电信 \
     ro.config.cdma_subscription=1 \
     ro.cdma.voicemail.number=mine \
     ro.setupwizard.enable_bypass=1

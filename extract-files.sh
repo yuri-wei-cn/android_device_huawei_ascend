@@ -81,3 +81,22 @@ adb pull /system/lib/libmmjpeg.so ../../../vendor/huawei/$DEVICE/proprietary/lib
 adb pull /system/lib/libmmipl.so ../../../vendor/huawei/$DEVICE/proprietary/libmmipl.so
 adb pull /system/lib/libmmprocess.so ../../../vendor/huawei/$DEVICE/proprietary/libmmprocess.so
 adb pull /system/etc/init.qcom.bt.sh ../../../vendor/huawei/$DEVICE/proprietary/init.qcom.bt.sh
+
+## C8600 WIFI
+adb pull /system/wifi/ar6000.ko ../../../vendor/huawei/$DEVICE/proprietary/wifi/ar6000.ko
+adb pull /system/wifi/caldata.bin.c8600.ar6002 ../../../vendor/huawei/$DEVICE/proprietary/wifi/caldata.bin.c8600.ar6002
+adb pull /system/wifi/iwlist ../../../vendor/huawei/$DEVICE/proprietary/wifi/iwlist
+adb pull /system/wifi/artagent ../../../vendor/huawei/$DEVICE/proprietary/wifi/artagent
+adb pull /system/wifi/connectap.sh ../../../vendor/huawei/$DEVICE/proprietary/wifi/connectap.sh
+adb pull /system/wifi/loadART.sh ../../../vendor/huawei/$DEVICE/proprietary/wifi/loadART.sh
+adb pull /system/wifi/athtcmd_ram.bin ../../../vendor/huawei/$DEVICE/proprietary/wifi/athtcmd_ram.bin
+adb pull /system/wifi/data.patch.hw2_0.bin.ar6002 ../../../vendor/huawei/$DEVICE/proprietary/wifi/data.patch.hw2_0.bin.ar6002
+adb pull /system/wifi/loadecho.sh ../../../vendor/huawei/$DEVICE/proprietary/wifi/loadecho.sh
+adb pull /system/wifi/athwlan.bin.z77 ../../../vendor/huawei/$DEVICE/proprietary/wifi/athwlan.bin.z77
+adb pull /system/wifi/data.patch.hw2_0.bin.ar6102 ../../../vendor/huawei/$DEVICE/proprietary/wifi/data.patch.hw2_0.bin.ar6102
+adb pull /system/wifi/udp_server ../../../vendor/huawei/$DEVICE/proprietary/wifi/udp_server
+adb pull /system/wifi/caldata.bin.ar6002 ../../../vendor/huawei/$DEVICE/proprietary/wifi/caldata.bin.ar6002
+adb pull /system/wifi/device.bin ../../../vendor/huawei/$DEVICE/proprietary/wifi/device.bin
+adb pull /system/wifi/caldata.bin.ar6102 ../../../vendor/huawei/$DEVICE/proprietary/wifi/caldata.bin.ar6102
+adb pull /system/wifi/iwconfig ../../../vendor/huawei/$DEVICE/proprietary/wifi/iwconfig
+adb pull /system/bin/wpa_supplicant ../../../vendor/huawei/$DEVICE/proprietary/wpa_supplicant
